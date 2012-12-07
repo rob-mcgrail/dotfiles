@@ -243,12 +243,13 @@ function fstr() # find a string in a set of files
 sed "s/$1/$SMSO$1$RMSO/gI"
 }
 
+export PATH=$PATH:$HOME/bin
+
 cd
 fi
 
 
 # path for random user scripts
-export PATH=$PATH:$HOME/bin
 
 # paths for go-lang
 
@@ -270,5 +271,3 @@ export PATH=$PATH:$HOME/bin
 
 # PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 # [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-cd
