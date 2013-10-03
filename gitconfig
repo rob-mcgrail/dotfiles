@@ -22,3 +22,21 @@
         added = green bold
         changed = yellow bold
         untracked = red bold
+[alias]
+        logpretty = log --graph --decorate --pretty=oneline --abbrev-commit
+        l = log --oneline
+
+        s = status
+        sb = status -s -b
+
+        a = add .
+
+        b = branch
+        t = tag
+        r = remote
+
+        d = diff
+        dc = diff --cached
+        dk = diff --check
+        dck = diff --cached --check
+
