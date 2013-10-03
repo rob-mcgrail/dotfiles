@@ -1,6 +1,6 @@
 [user]
         name = Rob McGrail
-        email = rob.mcgrail@gmail.comi
+        email = rob.mcgrail@gmail.com
 [core]
         editor = vim
         whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
