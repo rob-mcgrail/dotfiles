@@ -35,6 +35,8 @@
         t = tag
         r = remote
 
+        undo = reset --hard HEAD~
+
         d = diff
         dc = diff --cached
         dk = diff --check
