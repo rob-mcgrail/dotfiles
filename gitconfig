@@ -26,8 +26,8 @@
         logs = log --graph --decorate --pretty=oneline --abbrev-commit
         l = log --oneline
 
-        s = status
-        sb = status -s -b
+        stat = status
+        s = status -s -b
 
         a = add .
 
