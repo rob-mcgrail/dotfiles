@@ -23,7 +23,7 @@
         changed = yellow bold
         untracked = red bold
 [alias]
-        logpretty = log --graph --decorate --pretty=oneline --abbrev-commit
+        logs = log --graph --decorate --pretty=oneline --abbrev-commit
         l = log --oneline
 
         s = status
