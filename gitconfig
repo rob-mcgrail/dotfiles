@@ -25,6 +25,9 @@
 [alias]
         logs = log --graph --decorate --pretty=oneline --abbrev-commit
         l = log --oneline
+        ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+        ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+        fl = log -u
 
         stat = status
         s = status -s -b
@@ -35,10 +38,15 @@
         t = tag
         r = remote
 
+        f = "!git ls-files | grep -i"
+        g = grep -Ii
+
         undo = reset --hard HEAD~
 
         d = diff
         dc = diff --cached
         dk = diff --check
         dck = diff --cached --check
+        dlc = diff --cached HEAD^
 
+        la = "!git config -l | grep alias | cut -c 7-"
