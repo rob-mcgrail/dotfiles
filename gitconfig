@@ -43,7 +43,8 @@
         f = "!git ls-files | grep -i"
         g = grep -Ii
 
-        undo = reset --hard HEAD~
+        hundo = reset --hard HEAD~
+        undo = reset --soft HEAD~
 
         d = diff
         dc = diff --cached
