@@ -38,6 +38,8 @@
         t = tag
         r = remote
 
+        ci = commit
+
         f = "!git ls-files | grep -i"
         g = grep -Ii
 
