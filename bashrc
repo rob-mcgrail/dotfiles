@@ -5,6 +5,12 @@
 # # Dropbox Helper
 # alias dropb='sudo sysctl fs.inotify.max_user_watches=100000'
 
+# History
+HISTCONTROL=ignoreboth;
+HISTSIZE=2000;
+HISTFILESIZE=20000;
+shopt -s histappend;
+
 # Ports
 alias ports='sudo netstat -lpn'
 alias fuckunity='kill -9 $(pgrep unity-panel-ser)'
