@@ -61,10 +61,6 @@ BWHT="\[\033[47m\]" # background white
 # If not running interactively, don't do anything
 if [[ -n "$PS1" ]]; then
 
-# don't put duplicate lines in the history. See bash(1) for more options
-# ... or force ignoredups and ignorespace
-HISTCONTROL=ignoredups:ignorespace
-
 # replace more with most
 export PAGER='most'
 
@@ -73,10 +69,6 @@ export TERM=xterm-256color
 
 # append to the history file, don't overwrite it
 shopt -s histappend
-
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
