@@ -291,3 +291,11 @@ fi
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+source ~/.phpbrew/bashrc
+
+export PATH=${PATH}:/home/rob/dev/android-sdk-linux/tools
+export PATH=${PATH}:/home/rob/dev/android-sdk-linux/platform-tools
+export ANDROID_HOME=/home/rob/dev/android-sdk-linux
+## Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
