@@ -263,37 +263,17 @@ function fstr() # find a string in a set of files
 sed "s/$1/$SMSO$1$RMSO/gI"
 }
 
-export PATH=$PATH:$HOME/bin
+#export PATH=$PATH:$HOME/bin
 cd
 fi
 
-# path for random user scripts
-
-# paths for go-lang
-
-#This line will tell the Go installer where to place the source code before compilation
-#export GOROOT=$HOME/gosource
-
-#With this line, you choose the architecture of your machine.
-#Those with 64 bit CPUs should enter "amd64" here.
-#export GOARCH=386
-
-# #Your operating system
-# export GOOS=linux
-
-# export GOPATH=$HOME/opt/go
-
-# #Includ eGo binaries in command path
-# export PATH=$PATH:$GOBIN
-
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 source ~/.phpbrew/bashrc
 
-export PATH=${PATH}:/home/rob/dev/android-sdk-linux/tools
-export PATH=${PATH}:/home/rob/dev/android-sdk-linux/platform-tools
-export ANDROID_HOME=/home/rob/dev/android-sdk-linux
 ## Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
