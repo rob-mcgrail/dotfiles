@@ -263,12 +263,12 @@ function fstr() # find a string in a set of files
 sed "s/$1/$SMSO$1$RMSO/gI"
 }
 
-#export PATH=$PATH:$HOME/bin
 cd
 fi
 
-
-source ~/.phpbrew/bashrc
+if [ -f "$HOME/.phpbrew/bashrc" ]; then
+	source $HOME/.phpbrew/bashrc
+fi
 
 ## Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
