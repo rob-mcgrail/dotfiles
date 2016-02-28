@@ -5,7 +5,7 @@
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="random"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -49,7 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git ruby rails bundler catimg command-not-found compleat gem history last-working-dir npm rand-quote sudo web-search atom)
 
 # User configuration
 
@@ -82,3 +82,32 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias ports='sudo netstat -lpn'
+
+alias Install='sudo apt-get install'
+alias Remove='sudo apt-get remove'
+alias Update='sudo apt-get update'
+alias Upgrade='sudo apt-get upgrade'
+
+# history
+alias hist='history | grep $1' #Requires one input
+
+# human sizing
+alias df='df -h'
+
+# Get IP (call with wanip)
+function wanip {
+  myip=`elinks -dump http://checkip.dyndns.org:8245/`
+  echo "${myip}"
+}
+
+alias lanip='ifconfig | grep "inet addr"'
+
+# back aliases:
+alias .='cd ..'
+alias ..='cd ../..'
+alias ...='cd ../../..'
+alias ....='cd ../../../..'
+
+cat ~/dotfiles/hello.txt
