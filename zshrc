@@ -6,7 +6,7 @@
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME=random
-ZSH_THEME_RANDOM_CANDIDATES=( jtriley simple sorin fino agnoster jispwoso tjkirch macovsky ys wezm theunraveler sunrise funky )
+ZSH_THEME_RANDOM_CANDIDATES=( jtriley simple sorin fino agnoster jispwoso tjkirch macovsky ys wezm theunraveler sunrise funky cloud bureau agnoster)
 # jispwoso tjkirch macovsky ys wezm theunraveler sunrise
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
