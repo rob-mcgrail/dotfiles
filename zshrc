@@ -50,7 +50,7 @@ ZSH_THEME_RANDOM_CANDIDATES=( jtriley simple sorin fino agnoster jispwoso tjkirc
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ruby rvm rails catimg command-not-found gem history last-working-dir npm rand-quote sudo web-search atom)
+plugins=(git ruby rvm rails catimg command-not-found gem history last-working-dir npm rand-quote sudo web-search atom composer fabric debian nyan copydir copyfile colored-man-pages redis-cli node) 
 
 # User configuration
 export PATH="$PATH:/home/rob/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
