@@ -5,8 +5,9 @@
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="random"
-
+ZSH_THEME=random
+ZSH_THEME_RANDOM_CANDIDATES=( jtriley simple sorin fino agnoster jispwoso tjkirch macovsky ys wezm theunraveler sunrise funky )
+# jispwoso tjkirch macovsky ys wezm theunraveler sunrise
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -49,7 +50,7 @@ ZSH_THEME="random"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git catimg command-not-found gem history last-working-dir npm rand-quote sudo web-search atom)
+plugins=(git ruby rvm rails catimg command-not-found gem history last-working-dir npm rand-quote sudo web-search atom)
 
 # User configuration
 export PATH="$PATH:/home/rob/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
@@ -57,7 +58,16 @@ export PATH="$PATH:/home/rob/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/b
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH/usr/local/heroku/bin" # Heroku
 
+if [ "${(t)ZSH_THEME_RANDOM_CANDIDATES}" = "array" ] && [ "${#ZSH_THEME_RANDOM_CANDIDATES[@]}" -gt 0 ]; then
+  themes=(${^ZSH_THEME_RANDOM_CANDIDATES})
+  N=${#themes[@]}
+  ((N=(RANDOM%N)+1))
+  ZSH_THEME=${themes[$N]}
+  echo $ZSH_THEME
+fi
+
 source $ZSH/oh-my-zsh.sh
+
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
