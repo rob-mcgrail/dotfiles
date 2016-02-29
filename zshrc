@@ -6,7 +6,7 @@
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME=random
-ZSH_THEME_RANDOM_CANDIDATES=( jtriley simple sorin fino agnoster jispwoso tjkirch macovsky ys wezm theunraveler sunrise funky cloud bureau agnoster)
+ZSH_THEME_RANDOM_CANDIDATES=( jtriley simple sorin fino agnoster jispwoso tjkirch macovsky ys wezm theunraveler sunrise funky cloud bureau agnoster emoji)
 # jispwoso tjkirch macovsky ys wezm theunraveler sunrise
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -28,7 +28,7 @@ ZSH_THEME_RANDOM_CANDIDATES=( jtriley simple sorin fino agnoster jispwoso tjkirc
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -50,7 +50,7 @@ ZSH_THEME_RANDOM_CANDIDATES=( jtriley simple sorin fino agnoster jispwoso tjkirc
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ruby rvm rails catimg command-not-found gem history last-working-dir npm rand-quote sudo web-search atom composer fabric debian nyan copydir copyfile colored-man-pages redis-cli node) 
+plugins=(git ruby rvm rails catimg command-not-found gem history last-working-dir npm rand-quote sudo web-search atom composer fabric debian nyan copydir copyfile colored-man-pages redis-cli node)
 
 # User configuration
 export PATH="$PATH:/home/rob/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
