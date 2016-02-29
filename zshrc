@@ -49,12 +49,13 @@ ZSH_THEME="random"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ruby rails bundler catimg command-not-found compleat gem history last-working-dir npm rand-quote sudo web-search atom)
+plugins=(git catimg command-not-found gem history last-working-dir npm rand-quote sudo web-search atom)
 
 # User configuration
+  #
+  export PATH="$PATH:/usr/local/heroku/bin:/home/rob/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
-  export PATH="/home/rob/.rvm/gems/ruby-2.2.2/bin:/home/rob/.rvm/gems/ruby-2.2.2@global/bin:/home/rob/.rvm/rubies/ruby-2.2.2/bin:/home/rob/.rvm/bin:/usr/local/heroku/bin:/home/rob/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
-# export MANPATH="/usr/local/man:$MANPATH"
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 source $ZSH/oh-my-zsh.sh
 
@@ -111,3 +112,5 @@ alias ...='cd ../../..'
 alias ....='cd ../../../..'
 
 cat ~/dotfiles/hello.txt
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
