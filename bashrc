@@ -276,3 +276,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 cat ~/dotfiles/hello.txt
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# Elixir
+export PATH="$PATH:/usr/bin/elixir"
