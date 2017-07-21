@@ -53,8 +53,8 @@
         dlc = diff --cached HEAD^
 
         la = "!git config -l | grep alias | cut -c 7-"
-        
-        recom = "commit --amend -m" 
+	      re = "rebase -i HEAD~7"
+        am = "commit --amend -m"
 [branch]
 	autosetuprebase = always
 [merge]
