@@ -59,6 +59,9 @@ export PATH="$PATH:/home/rob/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/b
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH/usr/local/heroku/bin" # Heroku
+export ANDROID_HOME=$HOME/Android/Sdk # Android studio
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 if [ "${(t)ZSH_THEME_RANDOM_CANDIDATES}" = "array" ] && [ "${#ZSH_THEME_RANDOM_CANDIDATES[@]}" -gt 0 ]; then
   themes=(${^ZSH_THEME_RANDOM_CANDIDATES})
