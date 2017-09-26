@@ -56,6 +56,7 @@
         la = "!git config -l | grep alias | cut -c 7-"
 	      re = "rebase -i HEAD~7"
         am = "commit --amend -m"
+	git = !exec git
 [branch]
 	autosetuprebase = always
 [merge]
