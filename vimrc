@@ -1,3 +1,11 @@
 set nocompatible
 syntax on
-colorscheme zenburn
+
+set number
+set ruler
+set visualbell
+set ttyfast
+
+set background=dark
+set termguicolors
+colorscheme material-monokai
