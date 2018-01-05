@@ -5,7 +5,9 @@
         editor = vim
         whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [push]
-	default = current
+	      default = current
+[status]
+        showUntrackedFiles = all
 [color]
         ui = true
 [color "branch"]
@@ -57,8 +59,6 @@
 	      re = "rebase -i HEAD~7"
         am = "commit --amend -m"
 	git = !exec git
-[branch]
-	autosetuprebase = always
 [merge]
 	commit = no
-	ff = no
+	ff = yes
