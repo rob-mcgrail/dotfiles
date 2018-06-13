@@ -129,3 +129,7 @@ alias ....='cd ../../../..'
 alias colors='cd && wget -O gogh https://git.io/vQgMr && chmod +x gogh && ./gogh'
 
 cat ~/dotfiles/hello.txt
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+source ~/.phpbrew/bashrc
+export PATH="$PATH:$HOME/.rvm/bin"
