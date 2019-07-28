@@ -4,6 +4,7 @@
 [core]
         editor = vim
         whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	      pager = more
 [push]
 	      default = current
 [status]
@@ -25,7 +26,6 @@
         changed = yellow bold
         untracked = red bold
 [alias]
-
         logs = log --graph --decorate --pretty=oneline --abbrev-commit
         l = log --oneline
         ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
@@ -56,9 +56,10 @@
         dlc = diff --cached HEAD^
 
         la = "!git config -l | grep alias | cut -c 7-"
-	      re = "rebase -i HEAD~7"
+        re = "rebase -i HEAD~7"
         am = "commit --amend -m"
-	git = !exec git
+      	git = !exec git
+      	quick-stats = ! /usr/local/bin/git-quick-stats
 [merge]
 	commit = no
 	ff = yes
