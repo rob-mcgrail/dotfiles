@@ -52,12 +52,10 @@ DISABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(colored-man-pages git history autojump ruby rvm catimg common-aliases command-not-found gem history last-working-dir npm rand-quote sudo web-search composer fabric debian copydir copyfile colored-man-pages redis-cli node emoji gitignore themes)
+plugins=(colored-man-pages git history autojump ruby catimg common-aliases command-not-found gem history last-working-dir npm rand-quote sudo web-search composer fabric debian copydir copyfile colored-man-pages redis-cli node emoji gitignore themes)
 
 # User configuration
 export PATH="$PATH:/home/rob/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH/usr/local/heroku/bin" # Heroku
 export ANDROID_HOME=$HOME/Android/Sdk # Android studio
 export PATH=$PATH:$ANDROID_HOME/tools
@@ -130,6 +128,8 @@ alias colors='cd && wget -O gogh https://git.io/vQgMr && chmod +x gogh && ./gogh
 
 cat ~/dotfiles/hello.txt
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 source ~/.phpbrew/bashrc
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
