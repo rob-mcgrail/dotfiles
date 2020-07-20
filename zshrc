@@ -57,9 +57,9 @@ plugins=(colored-man-pages docker docker-compose git history autojump ruby catim
 # User configuration
 export PATH="$PATH:/home/rob/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 export PATH="$PATH/usr/local/heroku/bin" # Heroku
-export ANDROID_HOME=$HOME/Android/Sdk # Android studio
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+# export ANDROID_HOME=$HOME/Android/Sdk # Android studio
+# export PATH=$PATH:$ANDROID_HOME/tools
+# export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 if [ "${(t)ZSH_THEME_RANDOM_CANDIDATES}" = "array" ] && [ "${#ZSH_THEME_RANDOM_CANDIDATES[@]}" -gt 0 ]; then
   themes=(${^ZSH_THEME_RANDOM_CANDIDATES})
@@ -96,6 +96,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# overide docker-compose plugin alias to rm
+alias dcr='docker-compose run --rm'
 
 alias ports='sudo netstat -lpn'
 
