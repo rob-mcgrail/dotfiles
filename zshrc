@@ -5,8 +5,8 @@ export ZSH=/home/rob/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME=norm
-ZSH_THEME_RANDOM_CANDIDATES=( norm )
+ZSH_THEME=af-magic
+ZSH_THEME_RANDOM_CANDIDATES=( af-magic awesomepanda daveverwer)
 
 DISABLE_CORRECTION="true"
 
@@ -52,7 +52,7 @@ DISABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(colored-man-pages git history autojump ruby catimg common-aliases command-not-found gem history last-working-dir npm rand-quote sudo web-search composer fabric debian copydir copyfile colored-man-pages redis-cli node emoji gitignore themes)
+plugins=(colored-man-pages docker docker-compose git history autojump ruby catimg common-aliases command-not-found gem history last-working-dir npm rand-quote sudo web-search composer fabric debian copydir copyfile colored-man-pages redis-cli node emoji gitignore themes)
 
 # User configuration
 export PATH="$PATH:/home/rob/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
