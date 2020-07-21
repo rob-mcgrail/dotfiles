@@ -8,7 +8,7 @@ export ZSH=/home/rob/.oh-my-zsh
 ZSH_THEME=af-magic
 ZSH_THEME_RANDOM_CANDIDATES=( af-magic awesomepanda daveverwer)
 
-# DISABLE_CORRECTION="true"
+DISABLE_CORRECTION="true"
 
 # CASE_SENSITIVE="true"
 
@@ -29,7 +29,7 @@ ZSH_THEME_RANDOM_CANDIDATES=( af-magic awesomepanda daveverwer)
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
