@@ -8,7 +8,7 @@ export ZSH=/home/rob/.oh-my-zsh
 ZSH_THEME=af-magic
 ZSH_THEME_RANDOM_CANDIDATES=( af-magic awesomepanda daveverwer)
 
-DISABLE_CORRECTION="true"
+# DISABLE_CORRECTION="true"
 
 # CASE_SENSITIVE="true"
 
@@ -29,7 +29,7 @@ DISABLE_CORRECTION="true"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-#ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -52,7 +52,7 @@ DISABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(colored-man-pages docker docker-compose git history autojump ruby catimg common-aliases command-not-found gem history last-working-dir npm rand-quote sudo web-search composer fabric debian copydir copyfile colored-man-pages redis-cli node emoji gitignore themes)
+plugins=(colored-man-pages docker docker-compose git history autojump ruby catimg common-aliases command-not-found gem history last-working-dir npm rand-quote sudo web-search composer fabric debian copydir zsh-autosuggestions copyfile colored-man-pages redis-cli node emoji gitignore themes)
 
 # User configuration
 export PATH="$PATH:/home/rob/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
@@ -100,7 +100,8 @@ source $ZSH/oh-my-zsh.sh
 # overide docker-compose plugin alias to rm
 alias dcr='docker-compose run --rm'
 
-alias ports='sudo netstat -lpn'
+alias ports='sudo netstat -lpn | grep tcp'
+alias ports-all='sudo netstat -lpn'
 
 alias Install='sudo apt-get install'
 alias Remove='sudo apt-get remove'
