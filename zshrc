@@ -130,8 +130,13 @@ alias ...='cd ../../..'
 alias ....='cd ../../../..'
 
 alias colors='cd && wget -O gogh https://git.io/vQgMr && chmod +x gogh && ./gogh'
+rando=$(shuf -i 1-2 -n 1)
 
-cat ~/dotfiles/hello.txt
+if [ $rando = 2 ]; then
+  cat ~/dotfiles/hello.txt
+else
+  neofetch
+fi
 
 source ~/.phpbrew/bashrc
 
