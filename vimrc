@@ -1,7 +1,7 @@
 set nocompatible
 syntax on
 
-set number
+set nonumber
 set ruler
 set visualbell
 set ttyfast

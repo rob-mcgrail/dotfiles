@@ -129,6 +129,8 @@ alias ..='cd ../..'
 alias ...='cd ../../..'
 alias ....='cd ../../../..'
 
+alias example='eg'
+
 alias colors='cd && wget -O gogh https://git.io/vQgMr && chmod +x gogh && ./gogh'
 rando=$(shuf -i 1-2 -n 1)
 
