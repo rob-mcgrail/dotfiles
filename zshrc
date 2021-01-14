@@ -100,6 +100,10 @@ source $ZSH/oh-my-zsh.sh
 
 # overide docker-compose plugin alias to rm
 alias dcr='docker-compose run --rm'
+alias dsa='docker stop $(docker ps -a -q)'
+alias dps='docker ps -s'
+alias ddf='docker system df'
+alias dpa='docker image prune -a'
 
 alias ports='sudo netstat -lpn | grep tcp'
 alias ports-all='sudo netstat -lpn'
